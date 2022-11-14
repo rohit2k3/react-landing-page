@@ -1,0 +1,59 @@
+@import "color";
+
+.contact {
+    background-color: $second;
+    height: 120vh;
+    width: 100%;
+    padding-top: 10rem;
+    animation: forwards 1s  1s 1 linear alternate;
+
+    >main {
+        background-color: $first;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 200px 200px 0;
+        height: 80vh;
+
+        >h1 {
+            font: 400 3rem $text1;
+            border-bottom: 5px solid black;
+            margin: 2rem;
+        }
+
+        >form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            >input {
+                text-align: center;
+                margin: 0.5rem;
+                border: 5px solid $second 0.6;
+                border-radius: 200px;
+                height: 5vh;
+                width: 50vh;
+            }
+            >button{
+                text-align: center;
+                margin: 0.5rem;
+                border: 2px solid black;
+                border-radius: 200px;
+                height: 5vh;
+                width: 20vh;
+                background-color: $second;
+                color: $first;
+                text-transform: uppercase;
+                font: 100 1rem $text1;
+                cursor: pointer;
+                &:hover{
+                    color: $second;
+                    background-color: $first;
+                }
+            }
+        }
+    }
+}
